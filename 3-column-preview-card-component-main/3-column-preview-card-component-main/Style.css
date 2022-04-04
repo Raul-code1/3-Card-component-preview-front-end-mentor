@@ -1,0 +1,162 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Very-light-gray : hsl(0, 0%, 95%);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background: var(--Very-light-gray);
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+   
+}
+
+p {
+    font-size: 15px;
+    
+}
+
+
+
+.btns{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+}
+
+.cards{
+    color: white;
+     padding: 40px;
+     width: 60%;
+     
+}
+.card1 {
+    background: var(--Bright-orange);
+    border-radius: 10px 10px 0px 0;
+}
+
+.card1 button{
+    color: var(--Bright-orange);
+   
+}
+
+.card2 {
+    background: var(--Dark-cyan);
+}
+
+.card2 button{
+    color: var(--Dark-cyan);
+}
+
+.card3 {
+    background: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.card3 button{
+    color: var(--Very-dark-cyan);
+}
+
+
+.btns:hover {
+    background: transparent;
+    color: white;
+}
+
+.cards img{
+    margin-bottom: 15px;
+}
+
+.cards h2{
+    margin-bottom: 20px;
+}
+
+.cards p{
+    margin-bottom: 30px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width:1000px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 80%;
+    }
+
+    .cards {
+        height: 75%;
+        width: 25%;
+    }
+
+    .card1{
+        border-radius: 10px 0 0 10px;
+    }
+
+    
+    .card3{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .cards img{
+        margin-bottom: 30px;
+    }
+
+    .cards h2{
+        margin-bottom: 40px;
+    }
+
+    .cards p{
+        margin-bottom: 40px;
+    }
+
+    .card2 p{
+        margin-bottom: 55px;
+    }
+}
